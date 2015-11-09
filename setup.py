@@ -121,7 +121,7 @@ except ImportError:
 
     extra = {'scripts': ['bin/starcluster']}
 
-VERSION = 0.9999
+VERSION = '0.9999-celect'
 static = os.path.join('starcluster', 'static.py')
 execfile(static)  # pull VERSION from static.py
 
@@ -134,9 +134,9 @@ setup(
     package_data={'starcluster.templates':
                   ['web/*.*', 'web/css/*', 'web/js/*']},
     license='LGPL3',
-    author='Justin Riley',
-    author_email='justin.t.riley@gmail.com',
-    url="http://star.mit.edu/cluster",
+    author='Ying-zong Huang; forked from Justin Riley',
+    author_email='yingzong@celectengine.com',
+    url="https://github.com/yingzong/StarCluster",
     description="StarCluster is a utility for creating and managing computing "
     "clusters hosted on Amazon's Elastic Compute Cloud (EC2).",
     long_description=README,
