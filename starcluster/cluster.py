@@ -942,7 +942,7 @@ class Cluster(object):
                       min_count=count, max_count=count, count=count,
                       key_name=self.keyname,
                       availability_zone_group=cluster_sg,
-                      launch_group=cluster_sg,
+                      launch_group=None,
                       placement=zone or getattr(self.zone, 'name', None),
                       user_data=user_data,
                       placement_group=placement_group)
